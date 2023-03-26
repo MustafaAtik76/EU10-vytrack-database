@@ -134,7 +134,7 @@ public class ContactsStepDefs {
         // DBUtils.createConnection();
         //get the data in java collections
         Map<String, Object> rowMap = DBUtils.getRowMap(query);
-        String expectedFullname = (String) rowMap.get("full_name");
+         String expectedFullname = (String) rowMap.get("full_name");
         String expectedEmail = (String) rowMap.get("email");
 
         System.out.println("expectedFullname = " + expectedFullname);

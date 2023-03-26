@@ -1,3 +1,4 @@
+
 Feature: Contacts page
 
   Scenario:Default page number
@@ -61,7 +62,7 @@ Feature: Contacts page
       | user10         | Brenden   | Schneider |
       | storemanager85 | Stephan   | Haley     |
 
-     @db
+     @db  @wip
     Scenario: Contact test with email
       Given the user logged in as "sales manager"
       And the user navigates to "Customers" "Contacts"
@@ -76,7 +77,7 @@ Feature: Contacts page
     Then the information for "vanettaabshire@goldner-toy.co" should be same with database
 
 
-  @wip @db
+  @db
   Scenario Outline: Contact test with email
     Given the user logged in as "sales manager"
     And the user navigates to "Customers" "Contacts"
